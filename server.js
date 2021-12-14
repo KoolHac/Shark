@@ -1,0 +1,5 @@
+const API = require("json-server")
+const server = API.create()
+const host = server.router('users.json')
+server.use(host)
+server.listen(5500)
